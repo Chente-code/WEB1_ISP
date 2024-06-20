@@ -1,54 +1,81 @@
-# Astro Starter Kit: Basics
+# ![Banner](https://yourimageurl.com/banner.png)
 
-```sh
-npm create astro@latest -- --template basics
-```
+# Plantillas web Astro Inigualitysoft
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Bienvenido a **Plantillas web Astro Inigualitysoft**. Este repositorio contiene una colección de plantillas web optimizadas para proyectos construidos con Astro, un moderno framework para crear sitios web rápidos y dinámicos.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Índice
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- [Descripción](#descripción)
+- [Características](#características)
+- [Requisitos](#requisitos)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
+- [Contacto](#contacto)
 
-## 🚀 Project Structure
+## Descripción
 
-Inside of your Astro project, you'll see the following folders and files:
+Las **Plantillas web Astro Inigualitysoft** están diseñadas para desarrolladores y diseñadores que buscan una solución rápida y eficiente para construir sitios web modernos y receptivos. Cada plantilla está cuidadosamente creada para ofrecer la mejor experiencia de usuario y rendimiento.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Características
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **Diseños Responsivos**: Adaptables a cualquier dispositivo y tamaño de pantalla.
+- **Optimización SEO**: Plantillas optimizadas para motores de búsqueda.
+- **Componentes Reutilizables**: Modularidad que permite reutilizar componentes en diferentes partes del proyecto.
+- **Carga Rápida**: Diseñadas para ser rápidas y eficientes.
+- **Fácil Personalización**: Estructura de código clara y comentada para facilitar la personalización.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Requisitos
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Node.js (versión 14 o superior)
+- Astro (versión 3.0.0 o superior)
 
-## 🧞 Commands
+## Instalación
 
-All commands are run from the root of the project, from a terminal:
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/Chente-code/WEB1_ISP.git
+   ```
+2. Navega al directorio del proyecto:
+   ```sh
+   cd WEB1_ISP
+   ```
+3. Instala las dependencias:
+   ```sh
+   npm install
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Uso
 
-## 👀 Want to learn more?
+1. Ejecuta el servidor de desarrollo:
+   ```sh
+   npm run dev
+   ```
+2. Abre tu navegador y navega a `http://localhost:4321` para ver la plantilla en acción.
+3. Personaliza la plantilla editando los archivos en el directorio `src`.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Contribución
+
+¡Las contribuciones son bienvenidas! Si deseas contribuir:
+
+1. Haz un fork del proyecto.
+2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza los cambios y haz commits (`git commit -m 'Añadir nueva característica'`).
+4. Sube tus cambios (`git push origin feature/nueva-caracteristica`).
+5. Abre una solicitud de pull en GitHub.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
+
+## Contacto
+
+**Ninigualitysoft**  
+Correo: [contacto@ninigualitysoft.com](mailto:contacto@inigualitysoft.com)  
+Sitio web: [ninigualitysoft.com](https://inigualitysoft.com)
+
+---
+
+¡Gracias por usar las **Plantillas web Astro Ninigualitysoft**! Esperamos que disfrutes creando sitios web impresionantes con nuestras plantillas.
