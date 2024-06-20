@@ -1,4 +1,4 @@
-# ![Banner](https://yourimageurl.com/banner.png)
+# ![Banner](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuttercms.com%2Fblog%2Fwhat-is-astro%2F&psig=AOvVaw2rMfLmqTZ9kM6YccRQ2se8&ust=1718988558050000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDWmsXR6oYDFQAAAAAdAAAAABAI)
 
 # Plantillas web Astro Inigualitysoft
 
@@ -72,10 +72,10 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 
 ## Contacto
 
-**Ninigualitysoft**  
+**Inigualitysoft**  
 Correo: [contacto@ninigualitysoft.com](mailto:contacto@inigualitysoft.com)  
 Sitio web: [ninigualitysoft.com](https://inigualitysoft.com)
 
 ---
 
-¡Gracias por usar las **Plantillas web Astro Ninigualitysoft**! Esperamos que disfrutes creando sitios web impresionantes con nuestras plantillas.
+¡Gracias por usar las **Plantillas web Astro Inigualitysoft**! Esperamos que disfrutes creando sitios web impresionantes con nuestras plantillas. By. Ing Vicente ZG.
