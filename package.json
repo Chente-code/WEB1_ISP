@@ -1,0 +1,19 @@
+{
+  "name": "web1-isp",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.10.2",
+    "astro-navbar": "^2.3.3",
+    "nanostore": "^1.2.1",
+    "tailwindcss": "^3.4.4"
+  }
+}
