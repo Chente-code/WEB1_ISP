@@ -1,4 +1,4 @@
-# ![Banner](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuttercms.com%2Fblog%2Fwhat-is-astro%2F&psig=AOvVaw2rMfLmqTZ9kM6YccRQ2se8&ust=1718988558050000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDWmsXR6oYDFQAAAAAdAAAAABAI)
+# ![Banner](https://kinsta.com/wp-content/uploads/2023/05/astro-logo.png)
 
 # Plantillas web Astro Inigualitysoft
 
