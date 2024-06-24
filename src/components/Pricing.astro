@@ -1,12 +1,38 @@
 ---
-
+const plans = [
+  {
+    price: "$23",
+    speed: "80M",
+    description: "Plan básico ideal para uso individual.",
+    image: "../../public/planes/1.jpg",
+  },
+  {
+    price: "$27",
+    speed: "120M",
+    description: "Plan intermedio para hogares con múltiples dispositivos.",
+    image: "../../public/planes/2.jpeg",
+  },
+  {
+    price: "$35",
+    speed: "150M",
+    description: "Plan avanzado con alta velocidad de descarga y subida.",
+    image: "../../public/planes/3.jpg",
+  },
+  {
+    price: "$55",
+    speed: "200M",
+    description:
+      "Plan premium con velocidad ultrarrápida y máximo rendimiento.",
+    image: "../../public/planes/4.jpg",
+  },
+];
 ---
 
-<section class="bg-white py-12">
+<section class="bg-white py-12" id="service">
   <div class="max-w-screen-xl mx-auto px-6 lg:px-8">
     <div class="text-center mb-12">
       <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-        Nuestros Planes
+        NUESTROS PLANES
       </h2>
       <p class="mt-4 text-lg leading-6 text-gray-600">
         Elige el plan que mejor se adapte a tus necesidades. Calidad
@@ -15,25 +41,21 @@
     </div>
     <div class="flex flex-wrap -mx-6">
       {
-        Array.from({ length: 6 }).map((_, index) => (
-          <div class="w-full sm:w-1/2 lg:w-1/3 px-6 mb-12" key={index}>
+        plans.map((plan, index) => (
+          <div class="w-full sm:w-1/2 lg:w-1/3 px-6 mb-12 transform transition duration-300 hover:scale-105">
             <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <img
                 class="w-full h-48 object-cover rounded-t-lg"
-                src={`../../public/plan${index + 1}.jpg`}
+                src={plan.image}
                 alt={`Plan ${index + 1}`}
               />
               <h3 class="mt-4 text-xl font-semibold text-gray-900">
-                Plan {index + 1}
+                {plan.speed}
               </h3>
-              <p class="mt-2 text-gray-600">
-                Descripción del plan {index + 1}. Características y beneficios
-                incluidos.
-              </p>
+              <p class="mt-2 text-gray-600">{plan.description}</p>
               <div class="flex mt-4">
                 {Array.from({ length: 5 }).map((_, starIndex) => (
                   <svg
-                    key={starIndex}
                     class="w-5 h-5 text-yellow-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -43,13 +65,21 @@
                   </svg>
                 ))}
               </div>
-              <p class="mt-4 text-2xl font-bold text-gray-900">$49.99/mes</p>
-              <button
-                type="button"
-                class="mt-4 w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+              <p class="mt-4 text-2xl font-bold text-gray-900">
+                {plan.price}/mes
+              </p>
+              <a
+                href="https://api.whatsapp.com/send?phone=TUNUMERO&text=Hola%20quiero%20contratar%20el%20plan%20${plan.speed}"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Contratar
-              </button>
+                <button
+                  type="button"
+                  class="mt-4 w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                >
+                  Contratar
+                </button>
+              </a>
             </div>
           </div>
         ))

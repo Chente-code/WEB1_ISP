@@ -1,65 +1,86 @@
----
-
----
-
 <div
   class="slider-container relative overflow-hidden max-w-screen-xl mx-auto py-12 px-6 lg:px-8"
 >
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+      VENTAJAS DE NUESTRO SERVICIO
+    </h2>
+    <p class="mt-4 text-lg leading-6 text-gray-600">
+      FiberHome ofrece ventajas que impulsan el rendimiento de tus actividades!
+    </p>
+  </div>
   <div class="slider flex transition-transform duration-500 ease-in-out">
     <div class="slide flex-shrink-0 w-full">
       <div class="bg-white p-6 rounded-lg shadow-lg text-center">
         <img
-          class="w-24 h-24 object-cover rounded-full mx-auto mb-4"
-          src="path_to_image/image1.jpg"
-          alt="Testimonio 1"
+          class="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+          src="../../public/ventajas/1.jpg"
+          alt="Velocidad increíble"
         />
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Título 1</h2>
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">
+          Velocidad Increíble
+        </h2>
         <p class="text-gray-600">
-          Este es un párrafo de ejemplo para el testimonio 1.
+          "Disfruta de velocidades de internet ultrarrápidas que te permitirán
+          descargar archivos grandes en segundos y disfrutar de una experiencia
+          de navegación sin interrupciones."
         </p>
       </div>
     </div>
     <div class="slide flex-shrink-0 w-full">
       <div class="bg-white p-6 rounded-lg shadow-lg text-center">
         <img
-          class="w-24 h-24 object-cover rounded-full mx-auto mb-4"
-          src="path_to_image/image2.jpg"
-          alt="Testimonio 2"
+          class="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+          src="../../public/ventajas/2.jpg"
+          alt="Juegos sin lag"
         />
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Título 2</h2>
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">
+          Juegos sin Lag
+        </h2>
         <p class="text-gray-600">
-          Este es un párrafo de ejemplo para el testimonio 2.
+          "Nuestro servicio asegura una baja latencia, permitiéndote jugar tus
+          juegos en línea favoritos sin ningún tipo de retraso, para que puedas
+          disfrutar al máximo de tu entretenimiento."
         </p>
       </div>
     </div>
     <div class="slide flex-shrink-0 w-full">
       <div class="bg-white p-6 rounded-lg shadow-lg text-center">
         <img
-          class="w-24 h-24 object-cover rounded-full mx-auto mb-4"
-          src="path_to_image/image2.jpg"
-          alt="Testimonio 2"
+          class="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+          src="../../public/ventajas/3.jpg"
+          alt="Trabajo desde casa"
         />
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Título 2</h2>
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">
+          Trabajo Eficiente desde Casa
+        </h2>
         <p class="text-gray-600">
-          Este es un párrafo de ejemplo para el testimonio 2.
+          "Optimiza tu productividad con nuestra conexión estable y rápida,
+          ideal para videollamadas sin interrupciones y transferencia de
+          archivos de gran tamaño sin esfuerzo."
         </p>
       </div>
     </div>
     <div class="slide flex-shrink-0 w-full">
       <div class="bg-white p-6 rounded-lg shadow-lg text-center">
         <img
-          class="w-24 h-24 object-cover rounded-full mx-auto mb-4"
-          src="path_to_image/image2.jpg"
-          alt="Testimonio 2"
+          class="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+          src="../../public/ventajas/4.jpg"
+          alt="Entretenimiento en 4K"
         />
-        <h2 class="text-2xl font-semibold text-gray-900 mb-2">Título 2</h2>
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">
+          Entretenimiento en 4K
+        </h2>
         <p class="text-gray-600">
-          Este es un párrafo de ejemplo para el testimonio 2.
+          "Experimenta la mejor calidad de imagen con nuestro internet de alta
+          velocidad, que permite transmitir películas y series en 4K sin
+          buffering, para una experiencia de entretenimiento inigualable."
         </p>
       </div>
     </div>
     <!-- Añadir más slides según sea necesario -->
   </div>
+
   <button
     class="prev absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-300 hover:bg-gray-400 text-gray-700 rounded-full p-2"
   >
@@ -70,13 +91,14 @@
         clip-rule="evenodd"></path>
     </svg>
   </button>
+
   <button
     class="next absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-300 hover:bg-gray-400 text-gray-700 rounded-full p-2"
   >
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
       <path
         fill-rule="evenodd"
-        d="M7.707 4.293a1 1 0 010 1.414L11.586 10l-3.879 3.879a1 1 0 001.414 1.414l4.586-4.586a1 1 0 000-1.414l-4.586-4.586a1 1 0 00-1.414 0z"
+        d="M7.707 4.293a1 1 0 010 1.414L11.586 10l-3.879 3.879a1 1 001.414 1.414l4.586-4.586a1 1 000-1.414l-4.586-4.586a1 1 00-1.414 0z"
         clip-rule="evenodd"></path>
     </svg>
   </button>
@@ -107,6 +129,12 @@
       const offset = -index * 100;
       slider.style.transform = `translateX(${offset}%)`;
     }
+
+    // Cambiar automáticamente cada 5 segundos
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }, 5000);
 
     showSlide(currentIndex);
   });
