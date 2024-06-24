@@ -1,0 +1,55 @@
+---
+// src/components/Card.astro
+
+export interface CardProps {
+  pdfIcon: string;
+  title: string;
+  description: string;
+  pdf: string;
+}
+
+const { pdfIcon, title, description, pdf } = Astro.props;
+
+// URL base para el ícono de PDF
+const pdfIconBase = "../../public/pdf.png";
+
+// Construir la URL completa del ícono de PDF
+const pdfIconUrl = pdfIconBase;
+---
+
+<div
+  class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 flex flex-col justify-between"
+>
+  <div class="p-4">
+    <img
+      src={pdfIconUrl}
+      alt="PDF Icon"
+      class="w-12 h-12 object-contain mx-auto mt-4"
+    />
+    <h3 class="text-xl font-bold mb-2 text-center">{title}</h3>
+    <p class="text-gray-700 mb-4">{description}</p>
+  </div>
+  <div class="px-4 py-2 bg-gray-100 text-center">
+    <a
+      href={pdf}
+      download
+      class="inline-flex items-center space-x-2 text-blue-500 hover:text-blue-700"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M17 8l4 4m0 0l-4 4m4-4H3m13-4V3a2 2 0 00-2-2H7a2 2 0 00-2 2v5m10 0h4a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V11a2 2 0 012-2h4"
+        ></path>
+      </svg>
+      <span>Descargar</span>
+    </a>
+  </div>
+</div>

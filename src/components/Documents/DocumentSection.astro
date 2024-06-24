@@ -1,0 +1,108 @@
+---
+// src/components/DocumentSection.astro
+
+import Card from "./Card.astro";
+import "../../styles/global.css";
+
+const documents = [
+  {
+    title: "CONATEL",
+    description: "Documento de conatel valor agregado",
+    pdf: "../../public/pdf/071-03-CONATEL-2002 valor agregado.pdf",
+  },
+  {
+    title: "Consejo de seguridad Antel",
+    description: "Doc. Seguridad.",
+    pdf: "../../public/pdf/Consejos_de_seguridad_Antel.pdf",
+  },
+  {
+    title: "Control Parental",
+    description: "Controles parentales.",
+    pdf: "../../public/pdf/control parental.pdf",
+  },
+  {
+    title: "Definiciones Banda Ancha",
+    description: "Definiciones",
+    pdf: "../../public/pdf/Definiciones Banda Ancha y Comparticiвn.pdf",
+  },
+  {
+    title: "Firewall",
+    description: "Manual.",
+    pdf: "../../public/pdf/Firewall.pdf",
+  },
+  {
+    title: "L.O Telecomunicaciones",
+    description: "Telecomunicaciones",
+    pdf: "../../public/pdf/ley_organica_de_telecomunicaciones (1).pdf",
+  },
+  {
+    title: "Normas de Calidad",
+    description: "Normas",
+    pdf: "../../public/pdf/NormadeCalidad2009.pdf",
+  },
+  {
+    title: "Qos Sva",
+    description: "Normas.",
+    pdf: "../../public/pdf/qos sva.pdf",
+  },
+  {
+    title: "Reglamento de Abonados",
+    description: "Descripción del documento 1.",
+    pdf: "../../public/pdf/reglamento abonado.pdf",
+  },
+  {
+    title: "R.G Ley de Telecomunicaciones",
+    description: "Lyes",
+    pdf: "../../public/pdf/REGLAMENTO_GENERAL_LEY_TELECOMUNICACIONES.pdf",
+  },
+  {
+    title: "Reglamento de Telecomunicaciones",
+    description: "Reglamento.",
+    pdf: "../../public/pdf/Reglamento-Ley-Organica-de-Telecomunicaciones.pdf",
+  },
+  {
+    title: "Abonados y Clientes SVA",
+    description: "Reglamento.",
+    pdf: "../../public/pdf/reglamento-para-los-abonados-clientes-sva.pdf",
+  },
+  {
+    title: "Conatel",
+    description: "Reglamento",
+    pdf: "../../public/pdf/tel_477_16_conatel_2012.pdf",
+  },
+  {
+    title: "Terminologias",
+    description: "Biblioteca.",
+    pdf: "../../public/pdf/terminologias.pdf",
+  },
+];
+---
+
+<section class="container mx-auto py-12 mt-12 px-11">
+  <div class="animated-gradient"></div>
+  <div class="px-4 md:px-0 pb-12">
+    <h2 class="text-5xl font-extrabold text-center mb-8">Zona de Documentos</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 justify-center"
+    >
+      {
+        documents.map((doc, index) => (
+          <Card
+            key={index}
+            pdfIcon=""
+            Pasar
+            pdfIcon
+            como
+            prop
+            al
+            componente
+            Card
+            title={doc.title}
+            description={doc.description}
+            pdf={doc.pdf}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

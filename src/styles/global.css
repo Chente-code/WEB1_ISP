@@ -1,8 +1,67 @@
-html.dark {
-    background-color: #0d0950;
-    color: #fff;
+/* src/styles/styles.css */
+/* Estilo para la barra de scroll */
+body::-webkit-scrollbar {
+  width: 12px;
+  /* Ancho de la barra de scroll */
+  background-color: #f0f8ff;
+  /* Color de fondo del scroll */
+}
+
+/* Estilo para el botón de desplazamiento de la barra de scroll */
+body::-webkit-scrollbar-thumb {
+  background-color: #5bbc92;
+  /* Color del botón de desplazamiento */
+  border-radius: 10px;
+  /* Radio de las esquinas del botón de desplazamiento */
+}
+
+/* Opcional: Estilo para el track (rastro) de la barra de scroll */
+body::-webkit-scrollbar-track {
+  background-color: #a8e6cf;
+  /* Color del track (rastro) */
+  border-radius: 10px;
+  /* Radio de las esquinas del track */
+}
+
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .dark .nav-links a {
-    color: #fff;
+
+  50% {
+    background-position: 100% 50%;
   }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #f0f8ff, #a8e6cf, #f0f8ff);
+  background-size: 800% 800%;
+  animation: gradient 15s ease infinite;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.animated-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: -1;
+  filter: blur(30px);
+  opacity: 0.6;
+}

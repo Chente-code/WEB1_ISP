@@ -1,34 +1,37 @@
 ---
+
+import "../styles/global.css";
 const plans = [
   {
     price: "$23",
-    speed: "80M",
-    description: "Plan básico ideal para uso individual.",
+    speed: "Plan Basico de 80M",
+    description: "Ideal para uso individual para el Hogar.",
     image: "../../public/planes/1.jpg",
   },
   {
     price: "$27",
-    speed: "120M",
-    description: "Plan intermedio para hogares con múltiples dispositivos.",
+    speed: "Plan intermedio de 120M",
+    description: "Ideal para hogares con múltiples dispositivos.",
     image: "../../public/planes/2.jpeg",
   },
   {
     price: "$35",
-    speed: "150M",
-    description: "Plan avanzado con alta velocidad de descarga y subida.",
+    speed: "Plan Avanzado de 150M",
+    description: "Con alta velocidad de descarga y subida.",
     image: "../../public/planes/3.jpg",
   },
   {
     price: "$55",
-    speed: "200M",
+    speed: "Plan premium 200M",
     description:
-      "Plan premium con velocidad ultrarrápida y máximo rendimiento.",
+      "Con velocidad ultrarrápida y máximo rendimiento.",
     image: "../../public/planes/4.jpg",
   },
 ];
 ---
 
-<section class="bg-white py-12" id="service">
+<section class=" py-12" id="service">
+  <div class="animated-gradient"></div>
   <div class="max-w-screen-xl mx-auto px-6 lg:px-8">
     <div class="text-center mb-12">
       <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -66,10 +69,10 @@ const plans = [
                 ))}
               </div>
               <p class="mt-4 text-2xl font-bold text-gray-900">
-                {plan.price}/mes
+                {plan.price}/mes +IVA
               </p>
               <a
-                href="https://api.whatsapp.com/send?phone=TUNUMERO&text=Hola%20quiero%20contratar%20el%20plan%20${plan.speed}"
+                href="https://api.whatsapp.com/send?phone=593981097114&text=Hola%20quiero%20contratar%20el%20plan%20${plan.speed}"
                 target="_blank"
                 rel="noopener noreferrer"
               >
